@@ -3,7 +3,8 @@ class User < ActiveRecord::Base
   # Links security
   has_secure_password
 
-  has_many :cheerups, :comments
+  has_many :cheerups
+  has_many :comments
 
   # Password and Email Parameters Check
   validates :email, presence: true

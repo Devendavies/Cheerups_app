@@ -3,7 +3,7 @@
   <h1>Post</h1>
   <%= form_for @user, url: '/cheerup/new' do |f| %>
     Title:   <%= f.text_field :title %>
-    Content: <%= f.text_field :contentl %>
+    Content: <%= f.text_field :content %>
                <%= f.submit "Create" %>
   <% end %>
 

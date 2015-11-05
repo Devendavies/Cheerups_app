@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root 'users#index'
 
   # User and cheerups routes automatically initialized
-  resources :users # :cheerups
+  resources :users, :cheerups
 
 
   # Session routes

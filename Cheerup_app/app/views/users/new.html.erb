@@ -2,12 +2,12 @@
   <h1>Sign up</h1>
 
   <%= form_for :user, url: '/users' do |f| %>
-    Profile Picture url: <%=  f.text_field :image_url %>
+    Profile Picture url: <%= f.text_field :image_url %>
     Name:                <%= f.text_field :name %>
     Email:               <%= f.text_field :email %>
     Password:            <%= f.password_field :password %>
     Password Confirm:    <%= f.password_field :password_confirmation %>
                          <%= f.submit "Signup" %>
   <% end %>
-  
+
 </div>

@@ -4,8 +4,6 @@ class CreateComments < ActiveRecord::Migration
       t.string :author
       t.string :content
 
-      add_foreign_key :user.id
-
       t.timestamps
     end
   end

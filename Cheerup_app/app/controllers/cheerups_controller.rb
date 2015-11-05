@@ -1,4 +1,4 @@
-class CheerupController < ApplicationController
+class CheerupsController < ApplicationController
 
   before_action :authorize, except: [:index]
 
@@ -10,7 +10,7 @@ class CheerupController < ApplicationController
     @cheerup = Cheerup.new
 
     id = session[:user_id]
-    @user = User.find_by(id)
+    @user = User.find(id)
   end
 
   def create
