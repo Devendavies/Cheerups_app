@@ -1,0 +1,15 @@
+INDEX CODE
+<ul>
+  <%= image_tag("#{@user.image_url}", :alt => "Eet broke...") %>
+  <h2> <%= @user.name %> </h2>
+
+  <li>
+    <%= link_to "ID: #{user.id}", "/users/#{user.id}"%>
+    Name: <%= @user.name %>
+    Email: <%= @user.email %>
+  </li>
+</ul>
+
+Cheerups Controller
+
+connection.exec("INSERT INTO cheerups (author, content) VALUES (@author, @content)")

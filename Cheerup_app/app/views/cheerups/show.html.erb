@@ -1,0 +1,12 @@
+<div class="cheerups">
+  <ul>
+    <li>
+      <% @users.each @cheerups.each do |user, cheerup|%>
+        <%= cheerup.title %>
+        <%= cheerup.content%>
+        <%= user.name %>
+        <%= user.timestamps %>
+      <% end %>
+    </li>
+  <ul>
+</div>

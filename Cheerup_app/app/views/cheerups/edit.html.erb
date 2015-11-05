@@ -1,0 +1,10 @@
+<%= form_for @cheerup do |f| %>
+
+  Title: <%= f.text_field :title %>
+  Content:  <%= f.text_area  :content  %>
+
+  <%= f.submit "Complete Edit" %>
+
+<% end %>
+
+<%= link_to "Delete this cheerup", cheerup_path, method: :delete, data: {confirm: "Delete this cheerup permanently?"} %>
