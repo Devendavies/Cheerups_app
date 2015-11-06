@@ -9,8 +9,7 @@ class CheerupsController < ApplicationController
   def new
     @cheerup = Cheerup.new
 
-    id = session[:user_id]
-    @user = User.find(id)
+    @user = User.find(session[:user_id])
   end
 
   def create

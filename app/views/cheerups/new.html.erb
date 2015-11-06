@@ -1,7 +1,7 @@
 <div class="n_cheerup">
 
-  <h1>Post</h1>
-  <%= form_for @user, url: '/cheerup/new' do |f| %>
+  <h1> Cheerups </h1>
+  <%= form_for @cheerup, url: '/cheerups/new' do |f| %>
     Title:   <%= f.text_field :title %>
     Content: <%= f.text_field :content %>
                <%= f.submit "Create" %>

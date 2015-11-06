@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   resources :users, :cheerups
 
 
+  post '/cheerups/new' => 'cheerups#index'
+
+
   # Session routes
   get  '/login' => 'sessions#new'
   post '/login' => 'sessions#create'

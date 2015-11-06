@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   has_secure_password
 
   has_many :cheerups
-  has_many :comments
+  has_many :comments # through: cheerups
 
   # Password and Email Parameters Check
   validates :email, presence: true
