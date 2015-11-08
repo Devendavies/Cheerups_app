@@ -1,13 +1,16 @@
 <div class="create_user">
+  <%= stylesheet_link_tag 'sign_up', media: 'print, screen' %>
   <h1>Sign up</h1>
 
   <%= form_for :user, url: '/users' do |f| %>
-    Profile Picture url: <%= f.text_field :image_url %>
-    Name:                <%= f.text_field :name %>
-    Email:               <%= f.text_field :email %>
-    Password:            <%= f.password_field :password %>
-    Password Confirm:    <%= f.password_field :password_confirmation %>
-                         <%= f.submit "Signup" %>
+    <ul>
+      <li> Profile Picture url: <%= f.text_field :image_url %>             </li>
+      <li> Name:               <%= f.text_field :name %>                   </li>
+      <li> Email:             <%= f.text_field :email %>                   </li>
+      <li> Password:         <%= f.password_field :password %>             </li>
+      <li> Confirm Password:<%= f.password_field :password_confirmation %> </li>
+      <li>                 <%= f.submit "Signup" %>                        </li>
+    </ul>
   <% end %>
 
 </div>

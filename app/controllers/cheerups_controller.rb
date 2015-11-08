@@ -13,10 +13,10 @@ class CheerupsController < ApplicationController
   end
 
   def create
-    cheerup = Cheerup.create(cheerup_params)
+    cheerup = Cheerup.new(cheerup_params)
     cheerup.user_id = current_user.id
     if cheerup.save
-      redirect_to 'cheerups'
+      redirect_to 'cheerups/index'
     else
       redirect_to 'cheerups/new'
     end
@@ -38,8 +38,13 @@ class CheerupsController < ApplicationController
   end
 
   def destroy
-    cheerup[:user_id] = nil
+    cheerup = Cheerup.find(params[:id])
+    cheerup.delete
     redirect_to('/cheerups')
+  end
+
+  def show
+    @cheerup = Cheerup.find_by(id)
   end
 
   private

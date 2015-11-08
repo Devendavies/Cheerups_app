@@ -1,11 +1,13 @@
 <div class="cheerups">
   <ul>
     <li>
-      <% @users.each @cheerups.each do |user, cheerup|%>
+      <% if user.id == true %>
+      <% @cheerup do |cheerup|%>
         <%= cheerup.title %>
         <%= cheerup.content%>
-        <%= user.name %>
-        <%= user.timestamps %>
+      <% end %>
+      <% else %>
+        <% "Permission Denied" %>
       <% end %>
     </li>
   <ul>

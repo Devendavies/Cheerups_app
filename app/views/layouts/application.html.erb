@@ -10,13 +10,18 @@
 
   <body>
 
-    <div style="text-align: center; padding-bottom: 20px;">
+    <div class="nav-bar" style="text-align: center; padding-bottom: 20px;">
       <div style="display: inline;">
-        <% if current_user %>
-          Signed in as <%= current_user.name %> | <%= link_to "logout", "/logout" %>
-        <% else %>
-          <%= link_to "Login", "/login" %> | <%= link_to "Sign up", "/users/new" %>
-        <% end %>
+          <% if current_user %>
+        <div class="logged-in">
+            Signed in as <%= current_user.name %> | <%= link_to "logout", "/logout" %> | <%= link_to "New Cheerup!", "/cheerups/new" %>
+        </div>
+          <% else %>
+
+        <div class="logged-out">
+            <%= link_to "Login", "/login" %>  <%= link_to "Sign up", "/users/new" %>
+        </div>
+            <% end %>
       </div>
     </div>
 

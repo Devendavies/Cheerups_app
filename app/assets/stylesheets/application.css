@@ -13,3 +13,89 @@
  *= require_tree .
  *= require_self
  */
+
+/* NAV BAR */
+body {
+  background: url("http://thefabhouse.com/android-central/wallpaper/Backgrounds_125.png")
+}
+
+.header h1 {
+  text-align: center;
+  padding-left: 30px;
+  color: silver;
+}
+
+.header p {
+  margin-left: 60px;
+  margin-right: 20px;
+  padding-left: 10px;
+  text-align: center;
+  background-color:rgba(255,255,255,0.4);
+}
+
+.nav-bar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 18px;
+  width: auto;
+  background-color: lightblue;
+}
+
+.nav-bar a {
+  list-style: none;
+  font-size: 18px;
+  text: white;
+}
+
+.logged-in a {
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 18px;
+}
+
+.logged-out a {
+  padding: 0px 18% 0px 18%;
+  /*padding-left: 20%;
+  padding-right: 20%;*/
+  height: 18px;
+}
+
+/* Sign Up */
+.create_user ul {
+  list-style: none;
+  padding-left: 5px
+  margin: 10px;
+}
+
+.create_user li {
+  padding: 10px;
+}
+
+/* Cheerups */
+.list {
+  list-style: none;
+}
+
+
+.cheerup {
+  float: right;
+  margin: 20px;
+  border: solid gold 2px;
+  background: url("http://img12.deviantart.net/954e/i/2008/134/b/b/border_iii_by_struckdumb.jpg");
+  background-size: cover;
+  height: 180px;
+  width: 600px;
+
+}
+
+.cheerup h3 {
+  padding-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.cheerup p {
+  margin-top: 5px;
+  padding: 5px 12% 10px 12%;
+}

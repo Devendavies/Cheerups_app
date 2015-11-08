@@ -1,16 +1,23 @@
-<h1>The cheerups will be below</h1>
+<div class="header">
+  <h1>Welcome to Cheerups!</h1>
+  <p>The purpose </p>
+</div>
 
 <ul>
   <% @cheerups.each do |cheerup| %>
-  <li>
-    <div class="cheerup">
-      <h3><%= " #{cheerup.title}"%> </h3>
-      <h4><%=" by #{cheerup.user.user_name} the #{cheerup.user.animal}" %></h4>
-      <p><%= cheerup.body %></p>
-      <% if cheerup.user == current_user %>
-        <%= link_to "Edit Your cheerup" , edit_cheerup_path(id: cheerup.id) %>
-      <% end %>
+    <div class="list">
+      <li>
+
+        <div class="cheerup">
+          <h3><%= cheerup.title %> </h3>
+          <p><%= cheerup.content %></p>
+
+          <% if cheerup.user_id == current_user %>
+            <%= link_to "Edit Your cheerup" , edit_cheerup_path(id: cheerup.id) %>
+          <% end %>
+        </div>
+
+      </li>
     </div>
-  </li>
   <% end %>
 </ul>
