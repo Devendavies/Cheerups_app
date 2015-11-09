@@ -1,14 +1,12 @@
 <div class="cheerups">
   <ul>
     <li>
-      <% if user.id == true %>
-      <% @cheerup do |cheerup|%>
-        <%= cheerup.title %>
-        <%= cheerup.content%>
-      <% end %>
+      <% if @user.id == true %>
+          <%= @cheerup.title %>
+          <%= @cheerup.content %>
       <% else %>
         <% "Permission Denied" %>
       <% end %>
     </li>
-  <ul>
+  </ul>
 </div>

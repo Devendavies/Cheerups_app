@@ -7,9 +7,13 @@ class User < ActiveRecord::Base
   has_many :comments # through: cheerups
 
   # Password and Email Parameters Check
-  validates :email, presence: true
-  validates :password, length: { in: 6..20 }
-  validates :password_confirmation, presence: true
-  validates :password, confirmation:true
+  validates :name, :presence => { message: "Must enter a name for the account" }
 
+  validates :password, :length => { in: 6..20, message: "password has to be between 6 and 20 characters" },
+                       :presence => { message: "password can't be blank" }
+  validates :password, confirmation:true
+  validates :password_confirmation, presence: true
+
+  validates :email, presence: true,
+                    :uniqueness => { message: "email is already used" }
 end

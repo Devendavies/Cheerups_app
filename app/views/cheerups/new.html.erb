@@ -1,10 +1,12 @@
 <div class="n_cheerup">
 
-  <h1> Cheerups </h1>
+  <h1> Make A New Cheerup! </h1>
   <%= form_for @cheerup, url: '/cheerups/new' do |f| %>
-    Title:   <%= f.text_field :title %>
-    Content: <%= f.text_field :content %>
-               <%= f.submit "Create" %>
+    <ul>
+      <li> Title:   <%= f.text_field :title %>  </li>
+      <li> Content: <%= f.text_field :content %></li>
+      <li>          <%= f.submit "Create" %>    </li>
+    </ul>
   <% end %>
 
 </div>

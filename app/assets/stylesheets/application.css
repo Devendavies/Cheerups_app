@@ -14,12 +14,26 @@
  *= require_self
  */
 
-/* NAV BAR */
+/* ALL */
 body {
-  background: url("http://thefabhouse.com/android-central/wallpaper/Backgrounds_125.png")
+  background: url("http://thefabhouse.com/android-central/wallpaper/Backgrounds_125.png");
+  font-size: 14px;
+  font-style: italic;
 }
 
+a { color: gold; }
+
+li {
+  list-style: none;
+  padding: 2px;
+}
+
+input#email { margin-left: 21px; }
+input#password_confirmation { margin-left: 8px; }
+
+/* NAV BAR (header) */
 .header h1 {
+  font-style: italic;
   text-align: center;
   padding-left: 30px;
   color: silver;
@@ -30,7 +44,7 @@ body {
   margin-right: 20px;
   padding-left: 10px;
   text-align: center;
-  background-color:rgba(255,255,255,0.4);
+  background-color:rgba(255,255,255,.7);
 }
 
 .nav-bar {
@@ -38,7 +52,7 @@ body {
   padding-bottom: 5px;
   height: 18px;
   width: auto;
-  background-color: lightblue;
+  background-color: rgba(255,0,0,.3);
 }
 
 .nav-bar a {
@@ -48,6 +62,7 @@ body {
 }
 
 .logged-in a {
+
   padding-left: 5%;
   padding-right: 5%;
   height: 18px;
@@ -55,27 +70,52 @@ body {
 
 .logged-out a {
   padding: 0px 18% 0px 18%;
-  /*padding-left: 20%;
-  padding-right: 20%;*/
   height: 18px;
 }
 
 /* Sign Up */
 .create_user ul {
   list-style: none;
-  padding-left: 5px
-  margin: 10px;
+  margin-left: 10px;
 }
 
-.create_user li {
-  padding: 10px;
+.create_user li { padding: 10px; }
+
+.create_user input#user_image_url { margin-left: 10px;}
+.create_user input#user_name      { margin-left: 80px;}
+.create_user input#user_email     { margin-left: 80px;}
+.create_user input#user_password  { margin-left: 60px;}
+.create_user input#user_password_confirmation { margin-left: 13px;}
+
+/* Log In Page */
+
+.login {
+  color: silver;
+  font-size: 14px;
+  font-style: italic;
+}
+
+
+
+/* Ceate A Cheerup */
+.n_cheerup {
+  color: silver;
+}
+
+input#cheerup_title {
+  margin-left: 28px;
+  width: 240px;
+}
+
+input#cheerup_content {
+  margin-left: 10px ;
+  height: 80px;
+  width: 240px;
+  word-wrap: break-word;
 }
 
 /* Cheerups */
-.list {
-  list-style: none;
-}
-
+.list { list-style: none; }
 
 .cheerup {
   float: right;

@@ -16,9 +16,9 @@ class CheerupsController < ApplicationController
     cheerup = Cheerup.new(cheerup_params)
     cheerup.user_id = current_user.id
     if cheerup.save
-      redirect_to 'cheerups/index'
+      redirect_to '/cheerups/index'
     else
-      redirect_to 'cheerups/new'
+      redirect_to '/cheerups/new'
     end
   end
 
@@ -44,7 +44,10 @@ class CheerupsController < ApplicationController
   end
 
   def show
-    @cheerup = Cheerup.find_by(id)
+    id = current_user.id
+    @cheerup = Cheerup.find(id)
+    @user = @current_user
+    redirect_to('/cheerups')
   end
 
   private
