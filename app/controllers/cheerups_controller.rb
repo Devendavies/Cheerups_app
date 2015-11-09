@@ -47,6 +47,9 @@ class CheerupsController < ApplicationController
     id = current_user.id
     @cheerup = Cheerup.find(id)
     @user = @current_user
+    @comments = @cheerup.comments.all
+    @comment = @cheerup.comments.build
+
     redirect_to('/cheerups')
   end
 

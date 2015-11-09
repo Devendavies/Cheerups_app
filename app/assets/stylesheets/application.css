@@ -33,44 +33,43 @@ input#password_confirmation { margin-left: 8px; }
 
 /* NAV BAR (header) */
 .header h1 {
-  font-style: italic;
-  text-align: center;
-  padding-left: 30px;
   color: silver;
+  font-style: italic;
+  padding-left: 30px;
+  text-align: center;
 }
 
 .header p {
+  background-color:rgba(255,255,255,.7);
   margin-left: 60px;
   margin-right: 20px;
   padding-left: 10px;
   text-align: center;
-  background-color:rgba(255,255,255,.7);
 }
 
 .nav-bar {
+  background-color: rgba(255,0,0,.3);
+  height: 18px;
   padding-top: 5px;
   padding-bottom: 5px;
-  height: 18px;
   width: auto;
-  background-color: rgba(255,0,0,.3);
 }
 
 .nav-bar a {
-  list-style: none;
+  color: gold;
   font-size: 18px;
-  text: white;
+  list-style: none;
 }
 
 .logged-in a {
-
+  height: 18px;
   padding-left: 5%;
   padding-right: 5%;
-  height: 18px;
 }
 
 .logged-out a {
-  padding: 0px 18% 0px 18%;
   height: 18px;
+  padding: 0px 18% 0px 18%;
 }
 
 /* Sign Up */
@@ -108,8 +107,8 @@ input#cheerup_title {
 }
 
 input#cheerup_content {
-  margin-left: 10px ;
   height: 80px;
+  margin-left: 10px ;
   width: 240px;
   word-wrap: break-word;
 }
@@ -118,19 +117,19 @@ input#cheerup_content {
 .list { list-style: none; }
 
 .cheerup {
-  float: right;
-  margin: 20px;
   border: solid gold 2px;
   background: url("http://img12.deviantart.net/954e/i/2008/134/b/b/border_iii_by_struckdumb.jpg");
   background-size: cover;
+  float: right;
   height: 180px;
+  margin: 20px;
   width: 600px;
 
 }
 
 .cheerup h3 {
-  padding-top: 10px;
   margin-bottom: 0px;
+  padding-top: 10px;
   padding-bottom: 0px;
   text-align: center;
 }
